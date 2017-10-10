@@ -1,0 +1,20 @@
+&.overlay-window{
+	.overlay-control{
+		background-color: fadeout(@highlight, 15%);
+		.cross, .next, .previos{
+			&:before, &:after{
+				background-color: @heading;
+			}
+		}
+	}
+	&.map-overlay{
+		.overlay-control{
+			background-color: fadeout(@background, 10%);
+		}
+	}
+}
+.play-button{
+	&.style-highlight{
+		color: fadeout(@highlight, 20%);
+	}
+}

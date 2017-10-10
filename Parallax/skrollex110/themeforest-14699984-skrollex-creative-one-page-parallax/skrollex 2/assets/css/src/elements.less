@@ -1,0 +1,190 @@
+/*** HTML Elements / body, p, h1 - h6, input, textarea, a, ... ***/
+body, html{
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6923076923;
+}
+html{
+	text-rendering: auto;
+	overflow-y: scroll;
+	font-size: 8.6666666667px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+body{
+	font-size: 13px;
+}
+button{
+	margin: 2px;
+}
+a{
+	.transition(~"color .3s, background-color .3s");
+}
+a{
+	text-decoration: none;
+	&:focus{
+		outline:none;
+		text-decoration: none;
+	}
+	&:hover, &:active{
+		text-decoration: none;
+	}
+}
+iframe{
+	border: none;
+}
+strong{
+	font-weight: @fw-600;
+}
+b{
+	font-weight: @fw-700;
+}
+a.button, input.button, .btn, input[type=submit], .form-submit input[type=submit]{
+	font-weight: @fw-400;
+}
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	font-weight: @fw-700;
+	border: 1px solid;
+}
+textarea{
+	overflow: auto;
+}
+input.button, input[type=submit], .form-submit input[type=submit]{
+	font-weight: @fw-400;
+	text-transform: uppercase;
+	float: right;
+	width: auto;
+	.transition(~"all 0.3s");
+}
+input, textarea{
+	outline: 1px solid;
+	.transition(~"outline-color .2s");
+}
+h1{
+	font-size: 30px;
+	font-weight: @fw-700;
+	margin-bottom: 11px;
+	text-transform: uppercase;
+	.article-page &{
+		margin-top: 10px;
+		font-size: 40px;
+	}
+}
+h2 {
+	font-size: 22px;
+	font-weight: @fw-700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 11px;
+}
+h3 {
+	font-size: 19px;
+	font-weight: @fw-700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 11px;
+}
+h4 {
+	font-size: 16px;
+	font-weight: @fw-700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 11px;
+}
+h5{
+	font-size: 13px;
+	font-weight: @fw-700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 11px;
+}
+h6{
+	font-size: 11px;
+	font-weight: @fw-700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 11px;
+}
+p, dl:not([class]), ul:not([class]), ol:not([class]), pre:not([class]), ul.simple, ul.no-mark{
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: 1.2px;
+	margin: 0 0 11px 0;
+}
+pre{
+	padding: 20px;
+	white-space: normal;
+}
+code{
+	font-weight: @fw-700;
+	background-color: transparent;
+	color: inherit;
+}
+ins{
+	font-weight: @fw-700;
+	background-color: transparent;
+}
+sup, sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    top: .5ex;
+}
+sup {
+    bottom: 1ex;
+}
+blockquote{
+	border-left: 4px solid;
+	padding-left: 0.7778em;
+	-webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
+}
+table{
+	border: 1px solid;
+	tbody, tfoot, thead, tr, th, td {
+		border: 0;
+		color: inherit;
+	}
+	th, td {
+		border: 1px solid;
+	}
+	th {
+		border-width: 0 1px 1px 0;
+		font-weight: @fw-700;
+	}
+	td {
+		border-width: 0 1px 1px 0;
+	}
+	th, td {
+		padding: 0.4em;
+	}
+}
+dl{
+	dt{
+		font-weight: @fw-700;
+	}
+}
+ol:not([class]){
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin-left: 25px;
+	&>li:not([class]){
+		list-style-image: none;
+		list-style-position: outside;
+		list-style-type: decimal;
+	}
+}

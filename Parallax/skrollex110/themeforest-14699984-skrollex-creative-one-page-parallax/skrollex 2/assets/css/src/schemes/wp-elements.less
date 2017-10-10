@@ -1,0 +1,47 @@
+.widget:not(.x40-widget) {
+	*{
+		@brd: fadeout(@text, 80%) !important;
+		border-top-color: @brd !important;
+		border-bottom-color: @brd !important;
+		border-left-color: @brd !important;
+		border-right-color: @brd !important;
+		color: @heading !important;
+	}
+	a:hover{
+		color: @highlight !important;
+		border-color: fadeout(@heading, 40%) !important;
+	}
+	input[type]{
+		border-color: fadeout(@heading, 60%) !important;
+		color: @text !important;
+	}
+	li:not(:last-child) {
+		border-color: fadeout(@heading, 50%) !important;
+	}
+	.section-nav-title{
+		color: @highlight !important;
+	}
+}
+&.header-page-title-container{
+	*{
+		border-color: fadeout(@heading, 60%) !important;
+		color: @heading !important;
+	}
+	a{
+		color: @link !important;
+		&:hover{
+			color: @text !important;
+		}
+	}
+}
+& span.wpcf7-not-valid-tip{
+	color: @highlight;
+}
+&{
+	div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-spam-blocked, div.wpcf7-validation-errors{
+		border-color: fadeout(@highlight, 50%)
+	}
+}
+& div.wpcf7 .placeheld{
+	color: fadeout(@text, 40%)
+}

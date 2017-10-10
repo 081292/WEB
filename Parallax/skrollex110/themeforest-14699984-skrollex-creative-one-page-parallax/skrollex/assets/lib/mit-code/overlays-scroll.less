@@ -1,0 +1,46 @@
+.arrow-scroll{
+	margin-bottom: 60px;
+	&.right-bottom{
+		right: 80px;
+	}
+	.scroll-mouse{
+		transition: fill-opacity 0.3s;
+	}
+	&:hover{
+		.scroll-mouse{
+			fill-opacity: 0.35;
+		}
+	}
+	.mouse-point{
+		.animate(~"mouse-anim 1.8s ease-in-out infinite");
+		animation-delay: 0.3s;
+	}
+	.mouse-arrow{
+		.animate(~"mouse-anim 1.8s ease-in-out infinite");
+	}
+	@media (max-width: 991px) {
+		display: none;
+	}
+	@media (max-height: 684px) {
+		margin-bottom: 38px;
+	}
+	@media (max-height: 662px) {
+		display: none;
+	}
+}
+.mouse-anim-mixi() {
+	0% {
+		transform: translateY(0px)
+	}
+	50% {
+		transform: translateY(4px)
+	}
+	100% {
+		transform: translateY(0px)
+	}
+}
+@-webkit-keyframes mouse-anim {.mouse-anim-mixi;}
+@-moz-keyframes mouse-anim {.mouse-anim-mixi;}
+@-ms-keyframes mouse-anim {.mouse-anim-mixi;}
+@-o-keyframes mouse-anim {.mouse-anim-mixi;}
+@keyframes mouse-anim {.mouse-anim-mixi;}

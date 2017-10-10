@@ -1,0 +1,174 @@
+@import "description.less";
+@import "colors.less";
+@import "../colors/mixins.less";
+
+.color-scheme(@letter, @background, @heading, @text, @highlight, @link, @out){
+	@out-lite: @out + ((100% - @out)/2.33);
+	@out-lite-lite: @out + ((100% - @out)/1.4);
+	@out-hard: @out/3;
+	@out-hard-hard: @out/5;
+	@bg: fadeout(@background, @out);
+	@bg-lite: fadeout(@background, @out-lite);
+	@bg-lite-lite: fadeout(@background, @out-lite-lite);
+	@bg-hard: fadeout(@background, @out-hard);
+	@bg-hard-hard: fadeout(@background, @out-hard-hard);
+	.colors-@{letter} {
+		.bg(){
+			background-color: @bg;
+		}
+		.bg-lite(){
+			background-color: @bg-lite;
+		}
+		.bg-hard(){
+			background-color: @bg-hard;
+		}
+		.bg-transparent(){
+			background-color: transparent;
+		}
+		.bg-color{
+			color: @background;
+		}
+		.out{
+			opacity: 1 - unit(@out)/100;
+		}
+		color: @text;
+		.bg;
+		h1, h2, h3, h4, h5, h6, .heading, .color-heading{
+			color: @heading;
+		}
+		.fill-heading{
+			fill: @heading;
+		}
+		.fill-highlight{
+			fill: @highlight;
+		}
+		.fill-bg{
+			fill: @bg;
+		}
+		.fill-text{
+			fill: @text;
+		}
+		.fill-background{
+			fill: @background;
+		}
+		.stroke-heading{
+			stroke: @heading;
+		}
+		.stroke-highlight{
+			stroke: @highlight;
+		}
+		.stroke-text{
+			stroke: @text;
+		}
+		.highlight{
+			color: @highlight;
+		}
+		.text{
+			color: @text;
+		}
+		.link{
+			color: @link;
+		}
+		span:not([class]):not([style]){
+			color: @highlight;
+		}
+		.background{
+			background-color: @bg;
+		}
+		.background-heading{
+			background-color: @heading;
+		}
+		.background-highlight{
+			background-color: @highlight;
+		}
+		.background-text{
+			background-color: @text;
+		}
+		a{
+			color: @link;
+			&:hover{
+				color: fadeout(@link, 25%);
+			}
+			i{
+				color: @heading;
+			}
+		}
+		@place-holder-out: 40%;
+		::-webkit-input-placeholder {
+			color: fadeout(@text, @place-holder-out);
+		}
+		:-moz-placeholder {
+			color: fadeout(@text, @place-holder-out);
+			opacity:  1;
+		}
+		::-moz-placeholder {
+			color: fadeout(@text, @place-holder-out);
+			opacity:  1;
+		}
+		:-ms-input-placeholder {
+			color: fadeout(@text, @place-holder-out);
+		}
+		textarea, input[type]{
+			background-color: transparent;
+			border-color: fadeout(@heading, 60%);
+			outline-color: fadeout(@text, 100%);
+			&:focus {
+				outline-color: fadeout(@text, 63%);
+			}
+		}
+		input[type=submit]{
+			color: @highlight;
+			background-color: transparent;
+			border-color: fadeout(@heading, 60%);
+			outline-color: fadeout(@text, 100%);
+			&:focus {
+				outline-color: fadeout(@text, 63%);
+			}
+			&:hover{
+				color: @text;
+				background-color: transparent;
+			}
+		}
+		.border-heading{
+			border-color: @heading;
+		}
+		@import "elements.less";
+		@import "nav.less";
+		@import "gallery.less";
+		@import "icon.less";
+		@import "process.less";
+		@import "dot-scroll.less";
+		@import "loading.less";
+		@import "overlays.less";
+		@import "blog.less";
+		@import "decorations.less";
+		@import "home.less";
+		@import "layerswp.less";
+		@import "wp-elements.less";
+	}
+	.background-@{letter} {
+		background-color: @bg !important;
+	}
+	.border-hard-@{letter}{
+		border-color: fadeout(@heading, 15%) !important;
+	}
+	.border-normal-@{letter}{
+		border-color: fadeout(@heading, 70%) !important;
+	}
+	.border-lite-@{letter}{
+		border-color: fadeout(@heading, 92%) !important;
+	}
+	.heading-@{letter}, .link-heading-@{letter} a{
+		color: @heading !important;
+	}
+	.text-@{letter}{
+		color: @text !important;
+	}
+	.highlight-@{letter},  .internal-highlight-@{letter} span:not([class]):not([style]){
+		color: @highlight !important;
+	}
+	
+}
+@import "additional.less";
+@import "scroll-bar.less";
+@import "customize.less";

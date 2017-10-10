@@ -1,0 +1,376 @@
+ul.simple,
+.fg ul,
+.content-editor ul,
+.overlay-content ul,
+.post-body ul:not([class]),
+.offline-doc ul {
+  padding: 0 0 0 10px;
+  margin-left: 0;
+}
+ul.simple ul.simple,
+.fg ul ul.simple,
+.content-editor ul ul.simple,
+.overlay-content ul ul.simple,
+.post-body ul:not([class]) ul.simple,
+.offline-doc ul ul.simple,
+ul.simple ul:not([class]),
+.fg ul ul:not([class]),
+.content-editor ul ul:not([class]),
+.overlay-content ul ul:not([class]),
+.post-body ul:not([class]) ul:not([class]),
+.offline-doc ul ul:not([class]) {
+  padding: 0 0 0 25px;
+}
+ul.simple > li,
+.fg ul > li,
+.content-editor ul > li,
+.overlay-content ul > li,
+.post-body ul:not([class]) > li,
+.offline-doc ul > li {
+  text-indent: -5px;
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul.simple > li:before,
+.fg ul > li:before,
+.content-editor ul > li:before,
+.overlay-content ul > li:before,
+.post-body ul:not([class]) > li:before,
+.offline-doc ul > li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+ul.no-mark ul:not([class]) {
+  padding: 0 0 0 25px;
+}
+.x40-widget ul:not([class]),
+.content-editor ul:not([class]),
+.overlay-content ul:not([class]),
+.post-body ul:not([class]),
+.offline-doc ul:not([class]),
+.x40-widget ul.simple,
+.content-editor ul.simple,
+.overlay-content ul.simple,
+.post-body ul.simple,
+.offline-doc ul.simple,
+.x40-widget ul.no-mark,
+.content-editor ul.no-mark,
+.overlay-content ul.no-mark,
+.post-body ul.no-mark,
+.offline-doc ul.no-mark,
+.x40-widget ol:not([class]),
+.content-editor ol:not([class]),
+.overlay-content ol:not([class]),
+.post-body ol:not([class]),
+.offline-doc ol:not([class]) {
+  margin-bottom: 11px;
+}
+.x40-widget ul:not([class]) ul:not([class]),
+.content-editor ul:not([class]) ul:not([class]),
+.overlay-content ul:not([class]) ul:not([class]),
+.post-body ul:not([class]) ul:not([class]),
+.offline-doc ul:not([class]) ul:not([class]),
+.x40-widget ul.simple ul:not([class]),
+.content-editor ul.simple ul:not([class]),
+.overlay-content ul.simple ul:not([class]),
+.post-body ul.simple ul:not([class]),
+.offline-doc ul.simple ul:not([class]),
+.x40-widget ul.no-mark ul:not([class]),
+.content-editor ul.no-mark ul:not([class]),
+.overlay-content ul.no-mark ul:not([class]),
+.post-body ul.no-mark ul:not([class]),
+.offline-doc ul.no-mark ul:not([class]),
+.x40-widget ol:not([class]) ul:not([class]),
+.content-editor ol:not([class]) ul:not([class]),
+.overlay-content ol:not([class]) ul:not([class]),
+.post-body ol:not([class]) ul:not([class]),
+.offline-doc ol:not([class]) ul:not([class]),
+.x40-widget ul:not([class]) ol:not([class]),
+.content-editor ul:not([class]) ol:not([class]),
+.overlay-content ul:not([class]) ol:not([class]),
+.post-body ul:not([class]) ol:not([class]),
+.offline-doc ul:not([class]) ol:not([class]),
+.x40-widget ul.simple ol:not([class]),
+.content-editor ul.simple ol:not([class]),
+.overlay-content ul.simple ol:not([class]),
+.post-body ul.simple ol:not([class]),
+.offline-doc ul.simple ol:not([class]),
+.x40-widget ul.no-mark ol:not([class]),
+.content-editor ul.no-mark ol:not([class]),
+.overlay-content ul.no-mark ol:not([class]),
+.post-body ul.no-mark ol:not([class]),
+.offline-doc ul.no-mark ol:not([class]),
+.x40-widget ol:not([class]) ol:not([class]),
+.content-editor ol:not([class]) ol:not([class]),
+.overlay-content ol:not([class]) ol:not([class]),
+.post-body ol:not([class]) ol:not([class]),
+.offline-doc ol:not([class]) ol:not([class]) {
+  margin-bottom: 0;
+}
+.x40-widget ul.no-mark li:before,
+.content-editor ul.no-mark li:before,
+.overlay-content ul.no-mark li:before,
+.post-body ul.no-mark li:before,
+.offline-doc ul.no-mark li:before,
+.x40-widget .no-mark ul li:before,
+.content-editor .no-mark ul li:before,
+.overlay-content .no-mark ul li:before,
+.post-body .no-mark ul li:before,
+.offline-doc .no-mark ul li:before {
+  content: "" !important;
+}
+.theme-help ul,
+.offline-doc ul {
+  letter-spacing: normal;
+}
+.marked {
+  display: inline-block;
+  border-bottom-width: 3px;
+  padding-bottom: 7px;
+}
+.marked {
+  border-bottom-style: solid;
+}
+.caption {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  line-height: 22px;
+}
+@media (max-width: 1279px) {
+  .caption {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .caption {
+    font-size: 11px;
+    line-height: 19px;
+  }
+}
+.circle-caption {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#customize-controls .content-editor .heading-section-title,
+.wrapper-site .heading-section-title,
+#customize-controls .content-editor .heading-subsection-title,
+.wrapper-site .heading-subsection-title,
+#customize-controls .content-editor .header-details,
+.wrapper-site .header-details,
+#customize-controls .content-editor .subsection-details,
+.wrapper-site .subsection-details,
+#customize-controls .content-editor .lead,
+.wrapper-site .lead,
+#customize-controls .content-editor .narrow,
+.wrapper-site .narrow,
+#customize-controls .content-editor .circle-caption,
+.wrapper-site .circle-caption,
+#customize-controls .content-editor .caption,
+.wrapper-site .caption,
+#customize-controls .content-editor .slogan,
+.wrapper-site .slogan,
+#customize-controls .content-editor .header-caption,
+.wrapper-site .header-caption {
+  text-align: center;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.text-big {
+  font-size: 15px !important;
+  line-height: 22px;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+}
+#customize-controls .widget-content .skrollex-widget .widget-form-item,
+#customize-controls .widget-content .skrollex-widget .layers-row:last-child .layers-column {
+  margin-bottom: 12px;
+}
+#customize-controls .widget-content .skrollex-widget select,
+#customize-controls .widget-content .skrollex-widget input[type=text] {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+#customize-controls .widget-content .skrollex-widget .hidden-field {
+  display: none !important;
+}
+#customize-controls .widget-content .skrollex-widget .anchor-id-field {
+  font-size: 11px !important;
+  padding: 8px 8px !important;
+  line-height: 13px !important;
+  box-shadow: none !important;
+}
+#customize-controls .widget-content .skrollex-widget .text-transform-none {
+  text-transform: none;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor {
+  border: 1px solid rgba(11, 166, 224, 0.5);
+  padding: 8px;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.1;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor .highlight {
+  background-color: transparent;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor.area-editor {
+  min-height: 100px;
+  max-height: 400px;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor .header-details,
+#customize-controls .widget-content .skrollex-widget .content-editor .subsection-details,
+#customize-controls .widget-content .skrollex-widget .content-editor .col-details {
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor.small-editor {
+  padding: 8px 8px 0 8px;
+  max-height: 105px;
+}
+#customize-controls .widget-content .skrollex-widget .content-editor p,
+#customize-controls .widget-content .skrollex-widget .content-editor h1,
+#customize-controls .widget-content .skrollex-widget .content-editor h2,
+#customize-controls .widget-content .skrollex-widget .content-editor h3,
+#customize-controls .widget-content .skrollex-widget .content-editor h4,
+#customize-controls .widget-content .skrollex-widget .content-editor h5,
+#customize-controls .widget-content .skrollex-widget .content-editor h6 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li {
+  margin-bottom: 10px;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li .layers-accordion-title {
+  padding: 10px;
+  border-top: none;
+  border-bottom: 1px solid transparent;
+  cursor: move;
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li .layers-accordion-title:after {
+  line-height: 37px;
+  border-color: #eee;
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li:hover {
+  border-color: #ccc;
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li:hover .layers-accordion-title:after {
+  border-color: #ccc;
+}
+#customize-controls .widget-content .skrollex-widget ul.widget-list > li .layers-accordion-section {
+  border-top: 1px solid #eee;
+  border-bottom: none;
+}
+#customize-controls .widget-content .skrollex-widget .float-text-left,
+#customize-controls .widget-content .skrollex-widget .float-text-right,
+#customize-controls .widget-content .skrollex-widget .float-text-top,
+#customize-controls .widget-content .skrollex-widget .float-text-bottom,
+#customize-controls .widget-content .skrollex-widget .float-text-left-top,
+#customize-controls .widget-content .skrollex-widget .float-text-left-bottom,
+#customize-controls .widget-content .skrollex-widget .float-text-right-top,
+#customize-controls .widget-content .skrollex-widget .float-text-right-bottom {
+  font-size: 16px;
+  font-style: italic;
+}
+#customize-controls .highlight-text {
+  color: #ee0000;
+}
+#customize-controls .content-editor,
+#customize-controls .cke_panel_listItem a {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+#customize-controls .content-editor h1,
+#customize-controls .cke_panel_listItem a h1 {
+  font-size: 34px;
+}
+#customize-controls .content-editor h2,
+#customize-controls .cke_panel_listItem a h2 {
+  font-size: 30px;
+}
+#customize-controls .content-editor h3,
+#customize-controls .cke_panel_listItem a h3 {
+  font-size: 26px;
+}
+#customize-controls .content-editor h4,
+#customize-controls .cke_panel_listItem a h4 {
+  font-size: 22px;
+}
+#customize-controls .content-editor h5,
+#customize-controls .cke_panel_listItem a h5 {
+  font-size: 18px;
+}
+#customize-controls .content-editor h6,
+#customize-controls .cke_panel_listItem a h6 {
+  font-size: 16px;
+}
+#customize-controls .content-editor p.header-details,
+#customize-controls .cke_panel_listItem a p.header-details,
+#customize-controls .content-editor p.subsection-details,
+#customize-controls .cke_panel_listItem a p.subsection-details {
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+#customize-controls .content-editor p.col-details,
+#customize-controls .cke_panel_listItem a p.col-details {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#customize-controls .content-editor p.header-caption,
+#customize-controls .cke_panel_listItem a p.header-caption {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#customize-controls .content-editor span:not([class]):not([style]),
+#customize-controls .cke_panel_listItem a span:not([class]):not([style]),
+#customize-controls .content-editor .slogan,
+#customize-controls .cke_panel_listItem a .slogan {
+  color: #aa0000;
+}
+#customize-controls .content-editor .slogan,
+#customize-controls .cke_panel_listItem a .slogan {
+  font-size: 24px;
+}
+#customize-controls .content-editor .lead,
+#customize-controls .cke_panel_listItem a .lead {
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.cke_selected#customize-controls .content-editor,
+.cke_selected#customize-controls .cke_panel_listItem a {
+  background-color: #0ba6e0;
+  cursor: pointer;
+  color: #fff;
+}
+.cke_selected#customize-controls .content-editor > *,
+.cke_selected#customize-controls .cke_panel_listItem a > * {
+  color: #fff;
+}
+#customize-controls .cke_panel_listItem a * {
+  text-align: left !important;
+}
+#customize-controls .cke_panel_listItem a .text-center,
+#customize-controls .cke_panel_listItem a .text-right,
+#customize-controls .cke_panel_listItem a .text-justify {
+  text-align: left !important;
+}

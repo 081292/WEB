@@ -1,0 +1,24 @@
+&.main-navigation{
+	*:not(span){
+		color: @heading;
+		&:hover{
+			color: @heading;
+		}
+	}
+	span:not([class]):not([style]), a.active{
+		color: @highlight;
+		&:hover{
+			color: @highlight;
+		}
+	}
+}
+.ext-nav-toggle{
+	span, span:before, span:after{
+		background-color: @heading;
+	}
+}
+.responsive-nav{
+	span, span:before, span:after{
+		background-color: @highlight;
+	}
+}

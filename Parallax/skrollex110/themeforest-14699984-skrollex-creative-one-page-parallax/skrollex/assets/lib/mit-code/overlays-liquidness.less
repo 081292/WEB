@@ -1,0 +1,122 @@
+.liquidness.bottom{
+	margin-left: -100px;
+}
+
+.liquidness-wrapper {
+  -webkit-filter: contrast(20);
+  -webkit-transform: scale(0.5);
+  height: 400px;
+  width: 400px;
+  -webkit-animation: spin 30s linear infinite;
+}
+
+.liquidness-wrapper div {
+  position: absolute;
+  border-radius: 200px;
+}
+
+.ballone {
+  width: 400px;
+  height: 400px;
+  -webkit-filter: blur(10px);
+}
+
+.balltwo {
+  width: 340px;
+  height: 340px;
+  -webkit-filter: blur(10px);
+  -webkit-transform: translate(30px, 30px);
+}
+
+.ballthree {
+  width: 280px;
+  height: 280px;
+  -webkit-filter: blur(10px);
+  -webkit-transform: translate(60px, 60px);
+}
+
+.ballfour {
+  width: 200px;
+  height: 200px;
+  -webkit-filter: blur(10px);
+  -webkit-transform: translate(100px, 100px);
+}
+
+.ballfour {
+  width: 160px;
+  height: 160px;
+  -webkit-filter: blur(10px);
+  -webkit-transform: translate(120px, 120px);
+}
+
+.warp li {
+  width: 40px;
+  height: 40px;
+  margin-top: 140px;
+  -webkit-filter: blur(20px);
+  position: absolute;
+  -webkit-transform: translate(120px, -15px);
+}
+.warp li:nth-of-type(1) {
+  -webkit-animation: grow 20s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+.warp li:nth-of-type(2) {
+  -webkit-animation: move 5s ease-in-out infinite alternate;
+  -webkit-transform: translateY(50px);
+  top: 0px;
+}
+.warp li:nth-of-type(3) {
+  -webkit-animation: move 5s ease-in-out infinite alternate-reverse;
+  -webkit-transform: translateY(50px);
+  top: 100px;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    -webkit-transform: translate(120px, 100px);
+  }
+  80% {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    -webkit-transform: translate(120px, 100px);
+  }
+  90% {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-transform: translate(120px, 100px);
+  }
+  95% {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-transform: translate(120px, 100px);
+  }
+  100% {
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    -webkit-transform: translate(-100px, -200px);
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(400px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: scale(0.5) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(0.5) rotate(360deg);
+  }
+}

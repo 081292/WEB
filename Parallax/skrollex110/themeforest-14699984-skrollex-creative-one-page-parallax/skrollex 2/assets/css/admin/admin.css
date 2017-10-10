@@ -1,0 +1,22 @@
+.layers-product-screenshot img[src*="screenshots/"],
+.l_admin-product-screenshot img[src*="screenshots/"] {
+  box-sizing: border-box;
+  border-top: 29px solid rgba(0, 0, 0, 0);
+  border-bottom: 29px solid rgba(0, 0, 0, 0);
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+}
+.layers-product-screenshot {
+  height: 296px;
+}
+.layers-onboard-slider .layers-product-screenshot {
+  height: 211px;
+}
+.l_admin-product-screenshot,
+.blank-product .l_admin-product-screenshot {
+  height: 236px;
+}
+.l_admin-onboard-slider .l_admin-product-screenshot,
+.l_admin-onboard-slider .blank-product .l_admin-product-screenshot {
+  height: 211px;
+}

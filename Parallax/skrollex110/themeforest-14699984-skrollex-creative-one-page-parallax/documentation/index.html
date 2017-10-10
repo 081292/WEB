@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Skrollex</title>
+	<link rel="stylesheet" href="assets/css/layers/framework.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/layers/components.css" type="text/css">
+	<link rel="stylesheet" href="assets/lib/pure/pure-min.css" type="text/css">
+	<link rel="stylesheet" href="assets/lib/pure/grids-responsive-min.css" type="text/css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/colors-preset-alice.css" type="text/css">
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.help-example-result{
+			display: none;
+		}
+		.shortcode-title{
+			margin-top: 25px;
+		}
+		pre{
+			margin-bottom: 25px;
+		}
+		h1{
+			margin-top: 55px;
+			font-size: 50px;
+			line-height: 55px;
+		}
+	</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/fancybox/jquery.fancybox.min.js"></script>
+	<script>
+		jQuery(function($){
+				var opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.90, 'overlayColor' : '#000', 'showCloseButton' : true, 'padding' : 0, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+				jQuery('.youtube-popup')
+						.addClass('nofancybox')
+						.fancybox( jQuery.extend({}, opts, { 'type' : 'iframe', 'width' : 1280, 'height' : 720, 'padding' : 0, 'titleShow' : false, 'titlePosition' : 'float', 'titleFromAlt' : true, 'onStart' : function(selectedArray, selectedIndex, selectedOpts) { selectedOpts.href = selectedArray[selectedIndex].href.replace(new RegExp('youtu.be', 'i'), 'www.youtube.com/embed').replace(new RegExp('watch\\?(.*)v=([a-z0-9\_\-]+)(&amp;|&|\\?)?(.*)', 'i'), 'embed/$2?$1$4'); var splitOn = selectedOpts.href.indexOf('?'); var urlParms = ( splitOn > -1 ) ? selectedOpts.href.substring(splitOn) : ""; selectedOpts.allowfullscreen = ( urlParms.indexOf('fs=0') > -1 ) ? false : true } }) );
+		});
+	</script>
+</head>
+<body>
+	<div class="layout-boxed colors-a offline-doc">
+		<h1>Skroll<span>ex</span><br>Documentation</h1>
+
+<style>
+	#fancybox-close:before{
+		color: #999 !important;
+	}
+	#fancybox-close:hover:before{
+		color: #ddd !important;
+	}
+</style>
+<div class="pure-g theme-help">
+	<div class="col-padding pure-u-md-18-24">
+		<h2 id="install">Installation</h2>
+		<p>
+			Download Skrollex .zip file from ThemeForest and unzip
+			that file to your desktop. The skrollex.zip is used to install via
+			WordPress. It is located inside downloaded .zip file.
+		</p>
+		<p>You can install and activate Skrollex just like any WordPress theme, but
+			<a href="http://www.layerswp.com/" target="_blank"><strong>Layers</strong></a> must be installed first.
+			Layers is a free WordPress site builder.
+			You must have Layers already installed, but it does not need to be activated.
+		</p>
+		<p>
+			We recommended to install the theme <a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes_Manually_.28FTP.29" target="_blank"><strong>via FTP</strong></a>. If you get message while trying to upload the theme <a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes_using_the_Administration_Panels" target="_blank"><strong>via Administration Panel</strong></a>: <em>"Are you sure you want to do this? Please try again"</em>, it means that theme zip file is larger than max upload file size allowed in configuration of your server.  Please either <a href="http://docs.layerswp.com/doc/how-to-increase-the-file-size-upload-limit-in-wordpress/" target="_blank"><strong>increase that limit</strong></a> or upload the theme <a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes_Manually_.28FTP.29" target="_blank"><strong>via FTP</strong></a>.
+		</p>
+		<p>Please make sure that your system meets minimal requirements:</p>
+		<ul>
+			<li>PHP 5.4 or newer</li>
+			<li>Mysql 5.x</li>
+			<li>WordPress 4.4.2 or newer.</li>
+		</ul>
+		<h2 id="how-to">How To</h2>
+		<div class="pure-g">
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=68Xq07cnx3s?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/68Xq07cnx3s/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=68Xq07cnx3s?hd=1&amp;fs=1&amp;autoplay=1">
+						Create Page From Preset
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=T3I9hMipvVo?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/T3I9hMipvVo/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=T3I9hMipvVo?hd=1&amp;fs=1&amp;autoplay=1">
+						Create Section
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=54zzVPPpJ8g?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/54zzVPPpJ8g/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=54zzVPPpJ8g?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Section Background
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=8DUdEAqBk7c?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/8DUdEAqBk7c/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=8DUdEAqBk7c?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Page Background
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=TQgYvJ3Tswo?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/TQgYvJ3Tswo/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=TQgYvJ3Tswo?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Video Background
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=Li5n5D9kktY?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/Li5n5D9kktY/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=Li5n5D9kktY?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Column Background
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=vV0DyVJgARk?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/vV0DyVJgARk/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=vV0DyVJgARk?hd=1&amp;fs=1&amp;autoplay=1">
+						Change Section Color Scheme
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=3nmoHHTOJ5s?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/3nmoHHTOJ5s/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=3nmoHHTOJ5s?hd=1&amp;fs=1&amp;autoplay=1">
+						Change Site Colors
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=UzjFqhLGtew?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/UzjFqhLGtew/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=UzjFqhLGtew?hd=1&amp;fs=1&amp;autoplay=1">
+						Customize Color Scheme
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=YamrSYXVYTw?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/YamrSYXVYTw/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=YamrSYXVYTw?hd=1&amp;fs=1&amp;autoplay=1">
+						Change Fonts
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=23xh8GwS--o?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/23xh8GwS--o/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=23xh8GwS--o?hd=1&amp;fs=1&amp;autoplay=1">
+						Embed External Media
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=hV8uaxmeZj0?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/hV8uaxmeZj0/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=hV8uaxmeZj0?hd=1&amp;fs=1&amp;autoplay=1">
+						Format Text
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=xSvNU07lhWg?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/xSvNU07lhWg/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=xSvNU07lhWg?hd=1&amp;fs=1&amp;autoplay=1">
+						Highlighting in Site Title
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=3JNCG3O9cuU?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/3JNCG3O9cuU/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=3JNCG3O9cuU?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Column Icons
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=PVkaUk38-yI?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/PVkaUk38-yI/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=PVkaUk38-yI?hd=1&amp;fs=1&amp;autoplay=1">
+						Create Circle Icons
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=3cgcBVu_p0k?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/3cgcBVu_p0k/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=3cgcBVu_p0k?hd=1&amp;fs=1&amp;autoplay=1">
+						Set Column Animation
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=8k9k5KybwmA?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/8k9k5KybwmA/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=8k9k5KybwmA?hd=1&amp;fs=1&amp;autoplay=1">
+						Image Hover (Our Team)
+					</a>
+				</p>
+			</div>
+			<div class="col-padding pure-u-12-24 pure-u-md-8-24 video-preview">
+				<a target="_blank" class="youtube-popup preview-cell" href="http://www.youtube.com/watch?v=8jdMmiQdUPY?hd=1&amp;fs=1&amp;autoplay=1">
+					<img alt="" src="http://img.youtube.com/vi/8jdMmiQdUPY/maxresdefault.jpg">
+					<i class="fa fa-play-circle-o play-button style-light"></i>
+				</a>
+				<p class="video-preview-caption">
+					<a target="_blank" class="youtube-popup heading" href="http://www.youtube.com/watch?v=8jdMmiQdUPY?hd=1&amp;fs=1&amp;autoplay=1">
+						Create Gallery
+					</a>
+				</p>
+			</div>
+		</div>
+		
+		<h2 id="important-notes">Important notes</h2>
+		<h3 id="presets-with-settings">Presets with site settings</h3>
+		<p>If page preset named as "...: Page + Site Settings"  then page will be created and also these Customizer settings will be changed: 'Site Settings / Colors', 'Site Settings / Fonts', 'Site Settings / Appearance / Site Border'.</p>
+		<p>Keep in mind that these changes will affect the entire site.</p>
+		<h3 id="editable-areas">Editable Areas</h3>
+		<p>Editable areas in SX Section are divided into three parts with a blue border. These parts differ only by default style of paragraph. This is done to make it easier to stick to the same structure in all sections. You can change paragraph style and use these parts arbitrarily.</p>
+		
+		<h2 id="shortcodes">Theme Shortcodes</h2>
+		<p class="shortcode-title font-big" id="sx_button"><span><strong>sx_button</strong></span></p>
+		<p>Displays link as button.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>link</strong> - link url. Defaylt: #.</li>
+			<li><strong>colors</strong> - color scheme. Possible values: A, B...Z. Default: A.</li>
+			<li><strong>border</strong> - border style. Possible values: normal, hard, lite, no. Default: normal.</li>
+			<li><strong>new_window</strong> - open in new window. Possible values: yes, no. Default: no.</li>
+			<li><strong>hover</strong> - hover effect style. Possible values: light, dark. Default: light.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_button link="#about" colors="O" border="hard" new_window="no" hover="light"&#93;About&#91;/sx_button&#93;</pre>
+		<div class="help-example-result">
+			[sx_button link="#about" colors="O" border="hard" new_window="no" hover="light"]About[/sx_button]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_icon_link"><span><strong>sx_icon_link</strong></span></p>
+		<p>Displays icon as link.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>link</strong> - link url. Defaylt: #.</li>
+			<li><strong>new_window</strong> - open in new window. Possible values: yes, no. Default: no.</li>
+			<li><strong>class</strong> - icon font class. Possible values: icon classes of <a href=http://fontawesome.io/ target="_blank">Font Awesome</a> or <a href="http://designmodo.com/linecons-free/" target="_blank">Linecons</a>.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_icon_link link="https://youtu.be/QWzrek4TVck" class="fa fa-youtube fa-3x" new_window="yes"&#93;</pre>
+		<div class="help-example-result">
+			[sx_icon_link link="https://youtu.be/QWzrek4TVck" class="fa fa-youtube fa-3x" new_window="yes"]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_icon_link"><span><strong>sx_icon</strong></span></p>
+		<p>Displays icon.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>class</strong> - icon font class. Possible values: icon classes of <a href=http://fontawesome.io/ target="_blank">Font Awesome</a> or <a href="http://designmodo.com/linecons-free/" target="_blank">Linecons</a>.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_icon class="fa fa-lightbulb-o fa-3x"&#93;</pre>
+		<div class="help-example-result">
+			[sx_icon class="fa fa-lightbulb-o fa-3x"]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_animated_text"><span><strong>sx_animated_text</strong></span></p>
+		<p>Displays animated text.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>effect</strong> - animation effect. Possible values: A, B. Default: A.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_animated_text effect="A"&#93;Simple Text/Just Example/Other Text&#91;/sx_animated_text&#93;</pre>
+		<div class="help-example-result">
+			[sx_animated_text effect="A"]Simple Text/Just Example/Other Text[/sx_animated_text]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_banner"><span><strong>sx_banner</strong></span></p>
+		<p>Displays banner cell. See banner cells after section Home in demo.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>colors</strong> - color scheme. Possible values: A, B...Z. Default: A.</li>
+			<li><strong>title</strong> - banner cell title.</li>
+			<li><strong>subtitle</strong> - banner cell subtitle.</li>
+			<li><strong>overlay</strong> - overlay color. Possible values: Primary, Success, Info, Warning, Danger. Default: Success.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_banner colors="O" overlay="Success" title="Cell Title" subtitle="Subtitle"&#93;Text&#91;/sx_banner&#93;</pre>
+		<div class="help-example-result">
+			[sx_banner colors="O" overlay="Success" title="Cell Title" subtitle="Subtitle"]Text[/sx_banner]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_counter"><span><strong>sx_counter</strong></span></p>
+		<p>Displays counter. See section Our Numbers in demo.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>count</strong> - counter count. Possible values: integer numbers. Default: 0.</li>
+			<li><strong>label</strong> - counter label.</li>
+			<li><strong>colors</strong> - color scheme. Possible values: A, B...Z. Default: A.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_counter count="3459" label="Followers" colors="O"&#93;</pre>
+		<div class="help-example-result">
+			[sx_counter count="3459" label="Followers" colors="O"]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_skill"><span><strong>sx_skill</strong></span></p>
+		<p>Displays animated bar. See section Our Skills in demo.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>percent</strong> - bar size. Possible values: integer numbers. Default: 0.</li>
+			<li><strong>label</strong> - bar label.</li>
+			<li><strong>bar-colors</strong> - bar color scheme. Possible values: A, B...Z. Default: A.</li>
+			<li><strong>label-colors</strong> - label color scheme. Possible values: A, B...Z. Default: A.</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_skill label="Wordpress" percent="70" bar-colors="H" label-colors="I"&#93;</pre>
+		<div class="help-example-result">
+			[sx_skill label="Wordpress" percent="70" bar-colors="H" label-colors="I"]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_recent_posts"><span><strong>sx_recent_posts</strong></span></p>
+		<p>Displays list of recent posts.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>number_posts</strong> - list size. Possible values: integer numbers. Default: 5.</li>
+			<li><strong>more_text</strong> - text for link to all posts. Default: More...</li>
+		</ul>
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_recent_posts number_posts="5" more_text="More..."&#93;</pre>
+		<div class="help-example-result">
+			[sx_recent_posts number_posts="5" more_text="More..."]
+		</div>
+		
+		<p class="shortcode-title font-big" id="sx_map"><span><strong>sx_map</strong></span></p>
+		<p>Displays Google Map button.</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>button</strong> - button text. Default: Locate Us On Map.</li>
+			<li><strong>latitude</strong> - map latitude.</li>
+			<li><strong>longitude</strong> - map longitude.</li>
+			<li><strong>zoom</strong> - map zoom. Default: 14.</li>
+			<li><strong>colors</strong> - button color scheme. Possible values: A, B...Z. Default: A.</li>
+		</ul>
+		<p><strong>sx_map_marker</strong> - child shortcode for sx_map</p>
+		<p><strong>Parameters</strong></p>
+		<ul>
+			<li><strong>text</strong> - marker text. Default: Our awesome location.</li>
+			<li><strong>latitude</strong> - marker latitude.</li>
+			<li><strong>longitude</strong> - marker longitude.</li>
+		</ul>
+		
+		<p><strong>Example</strong></p>
+		<pre>&#91;sx_map button="Locate Us On Map" latitude="42.487606" longitude="-71.115661" zoom="14" colors="A"&#93;&#91;sx_map_marker text="Our awesome location" latitude="42.487606" longitude="-71.115661"&#93;&#91;sx_map_marker text="Our sales office" latitude="42.485100" longitude="-71.113256"&#93;&#91;/sx_map&#93;</pre>
+		<div class="help-example-result">
+			[sx_map button="Locate Us On Map" latitude="42.487606" longitude="-71.115661" zoom="14" colors="A"][sx_map_marker text="Our awesome location" latitude="42.487606" longitude="-71.115661"][sx_map_marker text="Our sales office" latitude="42.485100" longitude="-71.113256"][/sx_map]
+		</div>
+		
+		<h2 id="contact-form">Contact Form</h2>
+		<p>
+			Contact form handled by plugin Contact Form 7. You'll see a message in Dashboard, if the plug is not installed. Install and activate the plugin to properly work of contact form.
+		</p>
+		<p>
+			You can customize the form and the mail contents flexibly with simple markup. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering and so on.
+			You can find <a href="http://contactform7.com/docs/" target="_blank">docs</a>, <a href="http://contactform7.com/faq/" target="_blank">FAQ</a> and more detailed information about Contact Form 7 on <a href="http://contactform7.com/" target="_blank">contactform7.com</a>.
+		</p>
+		
+		<h2 id="fancybox">Fancybox</h2>
+		<p>
+			Some items are handled by the plugin Easy FancyBox. You'll see a message in Dashboard, if the plugin is not installed. Install and activate Easy FancyBox.
+		</p>
+		
+		
+		<h2 id="credits">Sources and Credits</h2>
+		<ul>
+			<li>
+				Photos by:
+				<ul>
+					<li><a target="_blank" href="https://www.flickr.com/photos/geishaboy500/">THOR</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/87007001@N04/">Shaun Fisher</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/johnonolan/">John O'Nolan</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/stf-o/">stephane</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/katya_alagich/">Katya Alagich</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/d2k6/">Luis Hernandez</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/65047661%40N00/">Jim Lukach</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/johanl/">Johan Larsson</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/johny/">John Kraus</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 License</a></li>
+					<li><a target="_blank" href="http://www.pexels.com/">Pexels</a>, <a target="_blank" href="http://www.pexels.com/photo-license/">CC0 License</a></li>
+					<li><a target="_blank" href="https://stocksnap.io/">Stocksnap</a>, <a target="_blank" href="https://stocksnap.io/license">CC0 License</a></li>
+					<li><a target="_blank" href="http://picjumbo.com/">Picjumbo</a>, <a target="_blank" href="http://picjumbo.com/about-author/">Picjumbo License</a></li>
+				</ul>
+			</li>
+			<li>
+				Video by:
+				<ul>
+					<li><a target="_blank" href="http://mazwai.com/">Mazwai</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0 License</a></li>
+				</ul>
+			</li>
+			<li>
+				Icons by:
+				<ul>
+					<li><a target="_blank" href="http://designmodo.com/">Designmodoh</a>, <a target="_blank" href="http://designmodo.com/linecons-free/">License</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="col-padding pure-u-md-6-24">
+		<h3>Table of contents</h3>
+		<ul class="no-mark">
+			<li><a href="#install">Theme Installation</a></li>
+			<li>
+				<a href="#how-to">How To</a>
+				<ul>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=68Xq07cnx3s?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Create Page From Preset
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=T3I9hMipvVo?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Create Section
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=54zzVPPpJ8g?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Section Background
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=8DUdEAqBk7c?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Page Background
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=TQgYvJ3Tswo?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Video Background
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=Li5n5D9kktY?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Column Background
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=QWzrek4TVck?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Change Section Color Scheme
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=3nmoHHTOJ5s?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Change Site Colors
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=UzjFqhLGtew?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Customize Color Scheme
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=YamrSYXVYTw?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Change Fonts
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=23xh8GwS--o?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Embed External Media
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=hV8uaxmeZj0?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Format Text
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=xSvNU07lhWg?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Highlighting in Site Title
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=3JNCG3O9cuU?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Column Icons
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=PVkaUk38-yI?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Create Circle Icons
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=3cgcBVu_p0k?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Set Column Animation
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=8k9k5KybwmA?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Image Hover (Our Team)
+					</a></li>
+					<li><a target="_blank" class="youtube-popup" href="http://www.youtube.com/watch?v=8jdMmiQdUPY?hd=1&amp;fs=1&amp;autoplay=1">
+						<i class="fa fa-play-circle-o"></i> Create Gallery
+					</a></li>
+				</ul>
+			</li>
+			<li><a href="#important-notes">Important notes</a>
+				<ul>
+					<li><a href="#presets-with-settings">Presets With Settings</a><li>
+					<li><a href="#editable-areas">Editable Areas</a><li>
+				</ul>
+			<li>
+			<li><a href="#shortcodes">Shortcodes</a>
+				<ul>
+					<li><a href="#sx_button">sx_button</a></li>
+					<li><a href="#sx_icon_link">sx_icon_link</a></li>
+					<li><a href="#sx_icon">sx_icon</a></li>
+					<li><a href="#sx_animated_text">sx_animated_text</a></li>
+					<li><a href="#sx_banner">sx_banner</a></li>
+					<li><a href="#sx_counter">sx_counter</a></li>
+					<li><a href="#sx_skill">sx_skill</a></li>
+					<li><a href="#sx_button">sx_map</a></li>
+				</ul>
+			</li>
+			<li><a href="#contact-form">Contact Form</a></li>
+			<li><a href="#fancybox">Fancybox</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ul>
+	</div>
+</div>
+	</div>
+</body>
+</html>

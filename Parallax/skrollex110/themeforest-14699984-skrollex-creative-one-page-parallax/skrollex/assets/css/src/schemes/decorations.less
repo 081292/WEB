@@ -1,0 +1,20 @@
+.caption{
+	color: @heading;
+	a{
+		color: @heading;
+	}
+	span{
+		color: @highlight;
+	}
+}
+.title, .header-details, .subsection-details, .col-details, .upheader{
+	.heading;
+}
+.slogan{
+	.highlight;
+}
+.col-style-decorated{
+	&:before{
+		background-color: fadeout(@highlight, 30%);
+	}
+}

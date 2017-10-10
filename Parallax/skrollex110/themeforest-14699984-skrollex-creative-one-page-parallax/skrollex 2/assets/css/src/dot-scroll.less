@@ -1,0 +1,68 @@
+/*** Dot Scroll / #dot-scroll ***/
+@dot-scroll-size: 5px;
+#dot-scroll{
+	@padding: 8px;
+	list-style: none;
+	position: fixed;
+	z-index: 1050;
+	top: 50%;
+	right: round((@page-border-w - @dot-scroll-size)/2);
+	.transform(~"translateY(-50%)");
+	width: @dot-scroll-size;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	.transition(~"background-color 0.6s, opacity 0.5s, top 0.5s, right 0.5s, left 0.5s, bottom 0.5s");
+	.page-is-gated &{
+		opacity: 0;
+	}
+	.page-loading &{
+		opacity: 1;
+	}
+	li{
+		display: block;
+		padding: @padding 0;
+		width: @dot-scroll-size;
+		height: @dot-scroll-size+(2*@padding);
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			span{
+				display: block;
+				.border-radius(50%);
+				width: 100%;
+				height: 100%;
+				.transition(~"background-color 0.6s");
+			}
+			&.active{
+				span{
+					@active-border: 1px;
+					@active-size: @dot-scroll-size+3px;
+					border: @active-border solid;
+					width: @active-size + (2*@active-border);
+					height: @active-size + (2*@active-border);
+					margin-top: -1 * @active-border - ((@active-size - @dot-scroll-size)/2);
+					margin-left: -1 * @active-border - ((@active-size - @dot-scroll-size)/2);
+				}
+			}
+			&.target{
+				span{
+					@target-border: 0px;
+					@target-size: @dot-scroll-size+3px;
+					border: @target-border solid;
+					width: @target-size + (2*@target-border);
+					height: @target-size + (2*@target-border);
+					margin-top: -1 * @target-border - ((@target-size - @dot-scroll-size)/2);
+					margin-left: -1 * @target-border - ((@target-size - @dot-scroll-size)/2);
+				}
+			}
+			
+		}
+	}
+}
+@media (max-width: 1249px) {
+	#dot-scroll{
+		display: none;
+	}
+}

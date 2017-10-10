@@ -1,0 +1,49 @@
+/*** Additional Colors / .background-transparent, .info, .danger, ... ***/
+.background-transparent{
+	background-color: transparent !important;
+}
+.primary-background{
+	background-color: fadeout(@primary-bg, @primary-out);
+}
+.success-background{
+	background-color: fadeout(@success-bg, @success-out);
+}
+.info-background{
+	background-color: fadeout(@info-bg, @info-out);
+}
+.warning-background{
+	background-color: fadeout(@warning-bg, @warning-out);
+}
+.danger-background{
+	background-color: fadeout(@danger-bg, @danger-out);
+}
+.primary-color{
+	color: @primary-bg;
+}
+.success-color{
+	color: @success-bg;
+}
+.info-color{
+	color: @info-bg;
+}
+.warning-color{
+	color: @warning-bg;
+}
+.danger-color{
+	color: @danger-bg;
+}
+.out-primary{
+	opacity: 1 - unit(@primary-out)/100;
+}
+.out-success{
+	opacity: 1 - unit(@success-out)/100;
+}
+.out-info{
+	opacity: 1 - unit(@info-out)/100;
+}
+.out-warning{
+	opacity: 1 - unit(@warning-out)/100;
+}
+.out-danger{
+	opacity: 1 - unit(@danger-out)/100;
+}

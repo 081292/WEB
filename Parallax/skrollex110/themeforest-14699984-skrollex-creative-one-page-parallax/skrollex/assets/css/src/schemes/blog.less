@@ -1,0 +1,43 @@
+.pagination{
+	.page-numbers{
+		background-color: @bg;
+		color: @heading;
+		border-color: fadeout(@heading, 45%);
+		&:hover{
+			color: @highlight;
+		}
+		&.current{
+			background-color: @highlight;
+			color: @bg;
+			border-color: @highlight;
+		}
+	}
+}
+.post-title{
+	a{
+		color: @heading !important;
+	}
+}
+&.post-meta{
+	*{
+		color: @heading;
+	}
+	a:hover{
+		color: @highlight;
+	}
+	.post-year{
+		border-color: fadeout(@heading, 92%);
+	}
+}
+.comment, .comment-notes{
+	color: @text;
+}
+p[class*='comment-form']{
+	color: @text;
+	.required {
+		color: @highlight;
+	}
+}
+h3.heading.comment-title>span:not([class]):not([style]){
+	color: @heading;
+}

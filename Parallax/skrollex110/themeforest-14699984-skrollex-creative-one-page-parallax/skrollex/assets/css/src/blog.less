@@ -1,0 +1,115 @@
+/*** Blog / .blog-page-wrapper, .post-title, .post-meta, .post-body, ... ***/
+.default-page-wrapper{
+	padding-top: 40px;
+	z-index: 100;
+	position: relative;
+}
+.header-page-title-container{
+	z-index: 100;
+	position: relative;
+}
+.post-page-wrapper{
+	position: relative;
+	z-index: 100;
+}
+.content-blog{
+	padding-top: 80px;
+	@media (max-width: 767px) {
+		padding-top: 40px;
+	}
+}
+.pagination{
+	padding-bottom: 50px;
+	margin: 30px 0 0 0;
+	display: block;
+	text-align: center;
+	.page-numbers, .next a, .previos a, a{
+		border: 1px solid;
+	}
+	&>div{
+		display: inline;
+		&.nav-links{
+			display: block;
+		}
+	}
+	
+}
+.post-title{
+	text-align: left;
+	font-weight: @fw-700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.post-body{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	&>article>.post-image, &>.post-image{
+		margin-top: -25px;
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+}
+.post-read-more{
+	text-transform: uppercase;
+}
+.post-meta {
+	font-size: 11px;
+	padding: 0 20px 20px 20px;
+	.post-day{
+		margin-top: 20px;
+		font-size: 72px;
+		font-weight: @fw-800;
+		line-height: 78px;
+	}
+	.post-month{
+		font-size: 23px;
+		font-weight: @fw-800;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	.post-year{
+		font-size: 25px;
+		font-weight: @fw-800;
+		line-height: 1;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid;
+		text-transform: uppercase;
+	}
+	@media (max-width: 767px) {
+		padding: 10px 25px 0 25spx;
+		margin: 0;
+		&, &.text-right{
+			text-align: left !important;
+		}
+		.post-day, .post-month, .post-year, .post-author, .post-comments, .post-categories, .post-permalink{
+			display: inline-block;
+			font-size: 16px;
+			padding: 0 15px 10px 0;
+			margin: 0;
+			line-height: 1;
+		}
+		.post-day, .post-month{
+			padding-right: 3px;
+		}
+		.post-year{
+			border-bottom: none;
+		}
+	}
+	&.post-meta-top{
+		margin-bottom: 11px;
+	}
+}
+.comment-list{
+	.comment-respond{
+		background-color: transparent;
+	}
+}
+.copy a{
+	border-bottom: none;
+}
+

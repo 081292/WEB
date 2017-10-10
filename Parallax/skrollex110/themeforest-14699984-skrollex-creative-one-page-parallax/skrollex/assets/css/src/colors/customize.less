@@ -1,0 +1,67 @@
+#customize-panel{
+	@fg: #fff;
+	@fg2: #efefef;
+	@bg: #222222;
+	@hl: #333333;
+	.customize-panel-title{
+		color: @fg;
+		background-color: @hl;
+	}
+	.options{
+		color: @fg;
+		background-color: @bg;
+		border-color: fadeout(@fg, 90%);
+		input[type]{
+			border-color: fadeout(@fg, 40%);
+			color: @fg;
+			background-color: @bg;
+		}
+		.button{
+			border-color: fadeout(@fg, 40%) !important;
+			color: @fg;
+			background-color: @hl;
+		}
+		.options-gate{
+			color: @fg;
+			background-color: fadeout(@bg,10%);
+			h5{
+				color: @fg;
+			}
+		}
+		.custom-css{
+			color: @fg;
+			background-color: @bg;
+			h4{
+				color: @fg;
+				background-color: @hl;
+			}
+			textarea{
+				color: @fg2;
+				background-color: @bg;
+				border-color: fadeout(@fg, 70%) !important;
+			}
+		}
+	}
+	&.on{
+		.toggle-button{
+			color: @fg;
+			background-color: @hl;
+		}
+	}
+}
+.minicolors-panel{
+	background-color: #000;
+	border-color: #333;
+}
+span.colors-label.show{
+	background-color: #333 !important;
+	color: #fff !important;
+}
+.light-colors-block{
+	&>.colors-label{
+		background-color: #000 !important;
+	}
+	&:after{
+		background-color: fadeout(#f3f3f3, 70%);
+	}
+}

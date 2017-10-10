@@ -1,0 +1,110 @@
+/*** WordPress Elements / .widget, .search-form, ... ***/
+.widget{
+	.section-nav-title{
+		font-size: 16px;
+	}
+	.tagcloud {
+		a {
+			border: 1px solid;
+			margin-top: 5px;
+			display: inline-block;
+			padding: 2px 8px;
+			text-transform: uppercase;
+		}
+	}
+	.search-form{
+		.search-field{
+			width: 100%;
+		}
+		.search-submit{
+			display: none;
+		}
+	}
+	&.widget_calendar{
+		a, th{
+			font-weight: @fw-800;
+		}
+		td{
+			border-bottom: none;
+			border-right: none;
+			border-left: none;
+			border-top: none;
+		}
+		th{
+			border-bottom: none;
+			border-right: none;
+			border-left: none;
+			border-top: none;
+		}
+		table{
+			border-top: none;
+			border-bottom: none;
+			border-right: none;
+			border-left: none;
+		}
+		thead, tfoot{
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+		}
+		#wp-calendar caption{
+			font-size: 13px;
+			font-weight: @fw-800;
+			letter-spacing: 2px;
+		}
+	}
+}
+.header-page-title-container{
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	.title{
+		padding: 3% 20px;
+		margin: auto;
+	}
+	.heading{
+		font-size: 39px;
+		line-height: 44px;
+		margin-top: 5px;
+	}
+	.bread-crumbs{
+		margin-bottom: 5px;
+	}
+	.excerpt{
+		text-align: center;
+		max-width: none;
+	}
+}
+.content-main{
+	padding-top: 15px;
+}
+blockquote.alignleft, .wp-caption.alignleft, img.alignleft {
+    margin: 0.4em 1.6em 1.6em 0;
+}
+blockquote.alignright, .wp-caption.alignright, img.alignright {
+    margin: 0.4em 0 1.6em 1.6em;
+}
+blockquote.aligncenter, .wp-caption.aligncenter, img.aligncenter {
+    margin-top: 0.4em;
+    margin-bottom: 1.6em;
+}
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0;
+}
+.article-page:after {
+    clear: both;
+	content: "";
+    display: table;
+}
+.comment.content{
+	padding: 20px 30px;
+}
+.wp-caption{
+	background: rgba(0,0,0,0);
+}
+.sticky{
+	.post-title{
+		font-style: italic;
+	}
+}
+

@@ -1,0 +1,22 @@
+/*** Text Backgrounds / .text-bg-element ***/
+.text-bg-svg{
+	letter-spacing: normal !important;
+	color: transparent !important;
+	h1&,h2&,h3&,h4&,h5&,h6&{
+		margint-top: 0;
+	}
+	.text-bg-animate{
+		animation: text-bg-animate 30s ease-in-out infinite;
+	}
+}
+@keyframes text-bg-animate {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(0.17);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}

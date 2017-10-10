@@ -1,0 +1,195 @@
+/*** Layout / .view, .bg, .fg ***/
+.view{
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	&>.fg{
+		position: relative;
+		padding-top: @content-padding-top;
+		padding-bottom: @content-padding-bottom;
+		-webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+		-moz-transition: -moz-transform 0.5s, opacity 0.25s;
+		-o-transition: -o-transform 0.5s, opacity 0.25s;
+		transition: transform 0.5s, opacity 0.25s;
+		&.border-bottom{
+			border-bottom: 4px solid;
+		}
+		&.border-top{
+			border-top: 4px solid;
+		}
+		&.small-top-padding{
+			padding-top: @content-padding-top-small;
+		}
+		&.small-bottom-padding{
+			padding-bottom: @content-padding-bottom-small;
+		}
+		.section-top, .section-cols{
+			position: relative;
+		}
+		h1,h2,h3{
+			&.svg-effect{
+				margin: 0;
+			}
+		}
+		.svg-effect{
+			a{
+				display: block;
+			}
+		}
+	}
+}
+.view.section-header .fg {
+	padding-top: @content-padding-top-header;
+	padding-bottom: @content-padding-bottom-header;
+}
+.wrapper-content > .view:first-of-type > .fg{
+	padding-top: @content-padding-top-first;
+	padding-bottom: @content-padding-bottom-first;
+	@media (max-width: 767px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+.no-top-padding, .view > .fg.no-top-padding, .wrapper-content > .view:first-of-type > .fg.no-top-padding{
+	padding-top: 0;
+}
+.no-bottom-padding, .view > .fg.no-bottom-padding, .wrapper-content > .view:first-of-type > .fg.no-bottom-padding{
+	padding-bottom: 0;
+}
+#footer{
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+	.section-cols{
+		padding-bottom: 30px;
+	}
+	.bottom{
+		padding: 25px 0;
+		margin-top: 30px;
+	}
+	.social-links{
+		font-size: 2.4rem;
+		line-height: 1.6666666667;
+		@media (max-width: 480px) {
+			font-size: 1.6rem;
+		}
+	}
+	&.border-bottom{
+		border-bottom: 4px solid;
+	}
+	&.border-top{
+		border-top: 4px solid;
+	}
+	ul.simple{
+		&>li{
+			line-height: 29px;
+		}
+	}
+	.footer-description{
+		padding: 10px 0;
+	}
+	.photo{
+		margin: 10px -3px;
+		&>div{
+			padding: 3px;
+		}
+	}
+}
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	display: block;
+	.wrapper-content>&{
+		position: fixed;
+	}
+	max-height: none !important;
+	max-width: none !important;
+	height: auto !important;
+	width: auto !important;
+}
+.wrapper-content>.bg, .wrapper-content>.video-bg, .wrapper-content>.vimeo-bg, .wrapper-content>.youtube-bg, .wrapper-content>img, .wrapper-content>iframe{
+	z-index: 10;
+}
+div.view.widget, footer{
+	z-index: 100;
+	position: relative;
+}
+.footer-bottom{
+	position: relative;
+	padding: 22px 0 22px 0;
+}
+.wrapper-content{
+	&>.paper{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 57px;
+	}
+}
+.mobile-only{
+	display: none !important;
+	.mobile &{
+		display: block !important;
+	}
+}
+.mobile{
+	.mobile-hide{
+		display: none !important;
+	}
+}
+.poor-browser{
+	.view, .wrapper-content{
+		&>.bg{
+			display: none;
+		}
+		&>.bg:last-of-type{
+			display: block;
+		}
+	}
+}
+.bg-holder{
+	display: none;
+}
+.col-image-top{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.layout-boxed{
+	margin-right: auto;
+    margin-left: auto;
+	max-width: 1220px;
+	padding-left: 40px;
+	padding-right: 40px;
+	@media (max-width: 767px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&>.pure-g{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	body.page-template-builder .wrapper-content > .view:first-of-type > .fg &,
+	#top-nav .top-nav-inner&{
+		max-width: 1250px;
+		padding-left: 55px;
+		padding-right: 55px;
+		@media (max-width: 767px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+.col-padding{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.wpcf7-form-control-wrap{
+	margin: 5px;
+}
+.content-box{
+	padding: 15px;
+}

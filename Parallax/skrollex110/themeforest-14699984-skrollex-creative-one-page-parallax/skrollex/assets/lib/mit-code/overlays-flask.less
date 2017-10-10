@@ -1,0 +1,224 @@
+.flask {
+	width: 200px;
+	height: 230px;
+	.ie9 &{
+		display: none;
+	}
+	.flask-fill{
+		transition: fill-opacity 0.3s;
+	}
+	&:hover{
+		.flask-fill{
+			fill-opacity: 0.7;
+		}
+	}
+	&.left-bottom{
+		margin: 0 0 45px 120px;
+	}
+	svg {
+		overflow: hidden;
+		width: 200px;
+		height: 230px;
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.background {
+		width: 197px;
+		height: 100px;
+		position: absolute;
+		z-index: 0;
+		bottom: 0;
+		left: 0;
+		.animate(~"liquid 3s infinite,liquid-color 80s infinite");
+	}
+}
+.flask-bubbles{
+	&.from-bottom{
+		margin-bottom: 180px;
+		margin-left: 40px;
+		&.right-bottom{
+			right: 70px;
+		}
+	}
+	&.additional{
+		margin-bottom: 180px;
+		margin-left: 600px;
+		.b0 {right: 40px;}
+		.b1 {right: 50px;}
+		.b2 {right: 60px;}
+		.b3 {right: 70x;}
+		.b4 {right: 90px;}
+		.b5 {right: 100px;}
+		.b6 {right: 110px;}
+		.b7 {right: 120px;}
+		.b8 {right: 130px;}
+		.b9 {right: 140px;}
+	}
+	.bubble {
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		position: absolute;
+		top: 190px;
+	}
+	.b1,.b2,.b3 {
+		right: 65px;
+		transform: scale(0.4);
+		opacity: 0.6;
+		.animate(~"bubble 8s linear infinite, side 2s ease-in-out infinite alternate");
+	}
+	.b2 {
+		right: 70px;
+		transform: scale(0.5);
+		animation-delay: 2s,2s;
+	}
+	.b3 {
+		right: 75px;
+		animation-delay: 5s,5s;
+		.animate(~"bubble 10s linear infinite, side 3s ease-in-out infinite alternate");
+	}
+	.b4,.b5 {
+		right: 70px;
+		transform: scale(0.5);
+		opacity: 0.8;
+		.animate(~"bubble 16s linear infinite, side 5s ease-in-out infinite alternate");
+		animation-delay: 4s,4s;
+	}
+	.b5 {
+		right: 60px;
+		animation-delay: 5s,5s;
+	}
+	.b6,.b7,.b8 {
+		right: 70px;
+		transform: scale(0.6);
+		opacity: 0.4;
+		.animate(~"bubble 14s linear infinite, side 3s ease-in-out infinite alternate");
+		animation-delay: 9s,9s;
+	}
+	.b7 {
+		right: 75px;
+		transform: scale(0.7);
+		animation-delay: 3s,3s;
+	}
+	.b8 {
+		right: 70px;
+		animation-delay: 7s,7s;
+	}
+	.b9,.b0 {
+		right: 75px;
+		transform: scale(0.65);
+		opacity: 0.7;
+		.animate(~"bubble 20s linear infinite, side 5s ease-in-out infinite alternate");
+	}
+	.b0 {
+		right: 65px;
+		animation-delay: 13s,13s;
+	}
+	.swirl {
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		position: absolute;
+		top: 140px;
+		left: 80px;
+	}
+	.s0 {
+		.animate(~"swirl 1s ease-in-out infinite alternate");
+	}
+	.s1 {
+		left: 100px;
+		transform: scale(1.2);
+		.animate(~"swirl 2s ease-in-out infinite alternate");
+		animation-delay: 2s;
+	}
+	.s2 {
+		left: 40px;
+		transform: scale(0.8);
+		.animate(~"swirl 2s ease-in-out infinite alternate");
+		animation-delay: 3s;
+	}
+	.s3 {
+		left: 60px;
+		transform: scale(1.4);
+		.animate(~"swirl 1s ease-in-out infinite alternate");
+		animation-delay: 5s;
+	}
+	.s4 {
+		left: 120px;
+		.animate(~"swirl 2s ease-in-out infinite alternate");
+		animation-delay: 3s;
+	}
+	.s5 {
+		left: 135px;
+		transform: scale(0.8);
+		.animate(~"swirl 1s ease-in-out infinite alternate");
+		animation-delay: 2s;
+	}
+}
+.liquid-mixi() {
+	0% {
+		height: 74px;
+	}
+	10% {
+		height: 71px;
+	}
+	35% {
+		height: 74px;
+	}
+	50% {
+		height: 76px;
+	}
+	80% {
+		height: 72px;
+	}
+	100% {
+		height: 74px;
+	}
+}
+@-webkit-keyframes liquid {.liquid-mixi;}
+@-moz-keyframes liquid {.liquid-mixi;}
+@-ms-keyframes liquid {.liquid-mixi;}
+@-o-keyframes liquid {.liquid-mixi;}
+@keyframes liquid {.liquid-mixi;}
+.bubble-mixi {
+	0% {
+		top: 190px;
+	}
+	100% {
+		top: -200px;
+		opacity: 0;
+	}
+}
+@-webkit-keyframes bubble {.bubble-mixi;}
+@-moz-keyframes bubble {.bubble-mixi;}
+@-ms-keyframes bubble {.bubble-mixi;}
+@-o-keyframes bubble {.bubble-mixi;}
+@keyframes bubble {.bubble-mixi;}
+.side-mixi() {
+	0% {
+		margin-right: 0px;
+	}
+	100% {
+		margin-right: 25px;
+	}
+}
+@-webkit-keyframes side {.side-mixi;}
+@-moz-keyframes side {.side-mixi;}
+@-ms-keyframes side {.side-mixi;}
+@-o-keyframes side {.side-mixi;}
+@keyframes side {.side-mixi;}
+.swirl-mixi() {
+	0% {
+		top: 140px;
+	}
+	100% {
+		top: 128px;
+	}
+}
+@-webkit-keyframes swirl {.swirl-mixi;}
+@-moz-keyframes swirl {.swirl-mixi;}
+@-ms-keyframes swirl {.swirl-mixi;}
+@-o-keyframes swirl {.swirl-mixi;}
+@keyframes swirl {.swirl-mixi;}

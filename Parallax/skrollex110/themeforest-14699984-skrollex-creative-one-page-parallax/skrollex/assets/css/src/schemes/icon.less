@@ -1,0 +1,13 @@
+& .circle{
+	&.border-lite:after{
+		border-color: fadeout(@heading, 50%);
+	}
+	color: @heading;
+	background-color: fadeout(@background, 80%);
+}
+.circle-caption{
+	color: @heading;
+	&:after{
+		background-color: fadeout(@text, 50%);
+	}
+}

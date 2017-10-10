@@ -1,0 +1,19 @@
+/*** Text Masks / .text-mask-svg ***/
+.text-mask-svg{
+	letter-spacing: normal !important;
+	a&{
+		overflow: visible;
+		svg{
+			overflow: visible;
+		}
+		.text-box{
+			.transition(~"transform 0.3s");
+			transform-origin: 50% 50% 0;
+		}
+		&:hover{
+			.text-box{
+				transform: translateY(-7px);
+			}
+		}
+	}
+}

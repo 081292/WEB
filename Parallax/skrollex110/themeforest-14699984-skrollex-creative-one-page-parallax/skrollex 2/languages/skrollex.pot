@@ -1,0 +1,1085 @@
+# Copyright (C) 2016 x40
+# This file is distributed under the GPL 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Skrollex 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-06-03 15:59:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:19
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:25 comments.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:26 comments.php:39
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:50
+msgid ""
+"<a class=\"created-using-layers\" target=\"_blank\" tooltip=\"Built with "
+"Layers\" href=\"http://www.layerswp.com\"><span>Built with Layers</span></a>"
+msgstr ""
+
+#: functions.php:128
+msgid ""
+"Use [ ] in Site Title for highlighting. For example: Comp[any] for "
+"Comp<span class=\"highlight-text\">any</span>"
+msgstr ""
+
+#: functions.php:162
+msgid "%s"
+msgstr ""
+
+#: functions.php:165
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:171
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:171 functions.php:188
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:188
+msgid "Pingback:"
+msgstr ""
+
+#: includes/customizer.php:21
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/customizer.php:26
+msgid "Twitter URL"
+msgstr ""
+
+#: includes/customizer.php:31
+msgid "YouTube URL"
+msgstr ""
+
+#: includes/customizer.php:36
+msgid "Vimeo URL"
+msgstr ""
+
+#: includes/customizer.php:41
+msgid "LinkedIn URL"
+msgstr ""
+
+#: includes/customizer.php:46
+msgid "Soundcloud URL"
+msgstr ""
+
+#: includes/customizer.php:50
+msgid "Github URL"
+msgstr ""
+
+#: includes/customizer.php:54
+msgid "Bitbucket URL"
+msgstr ""
+
+#: includes/customizer.php:58
+msgid "Instagram URL"
+msgstr ""
+
+#: includes/customizer.php:62
+msgid "Flickr URL"
+msgstr ""
+
+#: includes/customizer.php:66
+msgid "Google Plus URL"
+msgstr ""
+
+#: includes/customizer.php:70
+msgid "VK URL"
+msgstr ""
+
+#: includes/customizer.php:76
+msgid "Site Border"
+msgstr ""
+
+#: includes/customizer.php:79
+msgid "Border 1"
+msgstr ""
+
+#: includes/customizer.php:80
+msgid "Border 2"
+msgstr ""
+
+#: includes/customizer.php:85
+msgid "To Top Navigation Text"
+msgstr ""
+
+#: includes/customizer.php:86
+msgid "To [Top]"
+msgstr ""
+
+#: includes/customizer.php:90
+msgid "Scroll Down Navigation Text"
+msgstr ""
+
+#: includes/customizer.php:91
+msgid "Scroll [Down]"
+msgstr ""
+
+#: includes/customizer.php:95
+msgid "Extended Menu Background"
+msgstr ""
+
+#: includes/customizer.php:102
+msgid "Google Maps API Key"
+msgstr ""
+
+#: includes/customizer.php:119
+msgid "Social Media Profiles"
+msgstr ""
+
+#: includes/customizer.php:123
+msgid "Appearance"
+msgstr ""
+
+#: includes/customizer.php:127
+msgid "API Keys"
+msgstr ""
+
+#: includes/customizer.php:131
+msgid "Optimization"
+msgstr ""
+
+#: includes/default-settings.php:14
+msgid "Header Menu"
+msgstr ""
+
+#: includes/default-settings.php:15
+msgid "Extended Menu"
+msgstr ""
+
+#: includes/default-settings.php:16
+msgid "Footer Menu"
+msgstr ""
+
+#: includes/default-settings.php:27
+msgid "Blog Page Widgets"
+msgstr ""
+
+#: includes/default-settings.php:34
+msgid "Post Page Widgets"
+msgstr ""
+
+#: includes/default-settings.php:41
+msgid "Default Page Widgets"
+msgstr ""
+
+#: includes/default-settings.php:49
+msgid "Mobile Sidebar"
+msgstr ""
+
+#: includes/default-settings.php:50
+msgid "This sidebar will only appear on mobile devices."
+msgstr ""
+
+#: includes/default-settings.php:60
+msgid "Footer "
+msgstr ""
+
+#: includes/default-settings.php:92
+msgid "Contact Form"
+msgstr ""
+
+#: includes/default-settings.php:92
+msgid "Name"
+msgstr ""
+
+#: includes/default-settings.php:92
+msgid "Email"
+msgstr ""
+
+#: includes/default-settings.php:92
+msgid "Message"
+msgstr ""
+
+#: includes/default-settings.php:92
+msgid "Send"
+msgstr ""
+
+#: includes/default-settings.php:112
+msgid "Theme [Help]"
+msgstr ""
+
+#: includes/default-settings.php:135
+msgid "Home"
+msgstr ""
+
+#: includes/default-settings.php:140
+msgid "About"
+msgstr ""
+
+#: includes/default-settings.php:145
+msgid "Team"
+msgstr ""
+
+#: includes/default-settings.php:150
+msgid "Services"
+msgstr ""
+
+#: includes/default-settings.php:155
+msgid "Work"
+msgstr ""
+
+#: includes/default-settings.php:160
+msgid "Skills"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr ""
+
+#: includes/default-settings.php:170
+msgid "Contact"
+msgstr ""
+
+#: includes/default-settings.php:182
+msgid "Help"
+msgstr ""
+
+#: includes/default-settings.php:183
+msgid "Manual"
+msgstr ""
+
+#: includes/default-settings.php:188 widgets/skrollex-section-base.php:517
+msgid "Process"
+msgstr ""
+
+#: includes/default-settings.php:189
+msgid "Our Workflow"
+msgstr ""
+
+#: includes/default-settings.php:194
+msgid "Numbers"
+msgstr ""
+
+#: includes/default-settings.php:195
+msgid "Some Facts"
+msgstr ""
+
+#: includes/default-settings.php:200
+msgid "How We Work"
+msgstr ""
+
+#: includes/default-settings.php:201
+msgid "Awesome"
+msgstr ""
+
+#: includes/default-settings.php:206
+msgid "Who We Are"
+msgstr ""
+
+#: includes/default-settings.php:207
+msgid "We Are Designers"
+msgstr ""
+
+#: includes/extension.php:97
+msgid "None"
+msgstr ""
+
+#: includes/extension.php:104
+msgid "Custom Colors"
+msgstr ""
+
+#: includes/extension.php:132
+msgid "Unable to create directory:"
+msgstr ""
+
+#: includes/extension.php:139
+msgid "File is not writable:"
+msgstr ""
+
+#: includes/extension.php:143
+msgid "Access Denied"
+msgstr ""
+
+#: includes/extension.php:252
+msgid "Color Schemes"
+msgstr ""
+
+#: includes/extension.php:258
+msgid "Navigation Color Scheme 1"
+msgstr ""
+
+#: includes/extension.php:264
+msgid "Navigation Color Scheme 2"
+msgstr ""
+
+#: includes/extension.php:270
+msgid "Footer Color Scheme"
+msgstr ""
+
+#: includes/extension.php:276
+msgid "Overlay Window Color Scheme"
+msgstr ""
+
+#: includes/extension.php:282
+msgid "Preloader Color Scheme"
+msgstr ""
+
+#: includes/extension.php:288
+msgid "Extended Menu Color Scheme 1"
+msgstr ""
+
+#: includes/extension.php:294
+msgid "Extended Menu Color Scheme 2"
+msgstr ""
+
+#: includes/extension.php:300
+msgid "Extended Menu Color Scheme 3"
+msgstr ""
+
+#: includes/extension.php:306
+msgid "Mobile Menu Color Scheme"
+msgstr ""
+
+#: includes/extension.php:312
+msgid "Blog Color Scheme"
+msgstr ""
+
+#: includes/extension.php:318
+msgid "Post Color Scheme"
+msgstr ""
+
+#: includes/extension.php:324
+msgid "Default Page Color Scheme"
+msgstr ""
+
+#: includes/extension.php:330
+msgid "Default Page Header Color Scheme"
+msgstr ""
+
+#: includes/helper.php:102
+msgid "<a href=\"%1$s\" title=\"%2$s\" rel=\"author\">%3$s</a>"
+msgstr ""
+
+#: includes/helper.php:104
+msgid "View all posts by %s"
+msgstr ""
+
+#: includes/helper.php:110
+msgid "View all posts in %s"
+msgstr ""
+
+#: includes/helper.php:121 includes/helper.php:135
+msgid "No Comments"
+msgstr ""
+
+#: includes/helper.php:121 includes/helper.php:135
+msgid "1 Comment"
+msgstr ""
+
+#: includes/helper.php:121 includes/helper.php:135
+msgid "% Comments"
+msgstr ""
+
+#: includes/helper.php:124 includes/helper.php:138 partials/content-list.php:41
+msgid ", "
+msgstr ""
+
+#: includes/helper.php:127 includes/helper.php:141
+msgid "Permalink"
+msgstr ""
+
+#: includes/presets.php:7
+msgid "Page + Site Settings"
+msgstr ""
+
+#: includes/presets.php:7
+msgid "Page Only"
+msgstr ""
+
+#: partials/content-list.php:33
+msgid "Read More"
+msgstr ""
+
+#: partials/content-list.php:39
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: partials/content-single.php:43
+msgid "<span><i class=\"fa fa-files-o\"></i></span>"
+msgstr ""
+
+#: widgets/skrollex-image-bg-widget.php:12
+msgid "SX Background Image"
+msgstr ""
+
+#: widgets/skrollex-image-bg-widget.php:14
+msgid "This widget is used to display background image."
+msgstr ""
+
+#: widgets/skrollex-image-bg-widget.php:32
+msgid "Background Image"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:36 widgets/skrollex-section-base.php:419
+msgid "Display"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:44
+msgid "Color Scheme"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:55
+msgid "Section Height"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:57
+msgid "Normal"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:58
+msgid "Full Screen"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:59
+msgid "Half Screen"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:60
+msgid "One Third Screen"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:71
+msgid "Top Padding"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:73 widgets/skrollex-section-base.php:87
+#: widgets/skrollex-section-base.php:102 widgets/skrollex-section-base.php:177
+msgid "Yes"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:74 widgets/skrollex-section-base.php:88
+#: widgets/skrollex-section-base.php:101 widgets/skrollex-section-base.php:124
+#: widgets/skrollex-section-base.php:145 widgets/skrollex-section-base.php:176
+#: widgets/skrollex-section-base.php:199 widgets/skrollex-section-base.php:466
+msgid "No"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:85
+msgid "Bottom Padding"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:99
+msgid "Hide on Small Devices"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:114
+msgid "Parallax Objects"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:122
+msgid "SVG Objects"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:125
+msgid "Scroll"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:126
+msgid "Scroll Right"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:127
+msgid "Lamp"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:128
+msgid "Flask, Scroll, Lamp"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:129
+msgid "Scroll, Lamp"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:130
+msgid "Flask, Scroll"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:131
+msgid "Flask, Scroll Right"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:132
+msgid "Flask, Lamp"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:143
+msgid "Pattern"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:146
+msgid "Pattern 1 Dark"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:147
+msgid "Pattern 1 Light"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:148
+msgid "Pattern 2 Dark"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:149
+msgid "Pattern 2 Light"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:150
+msgid "Pattern 3 Dark"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:151
+msgid "Pattern 3 Light"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:152
+msgid "Pattern 4 Dark"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:153
+msgid "Pattern 4 Light"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:164
+msgid "Mask"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:174
+msgid "To Front"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:189 widgets/skrollex-section-base.php:197
+msgid "Header Effect"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:200
+msgid "Effect A - Static"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:201
+msgid "Effect A - Animated"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:202
+msgid "Effect B - Static"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:203
+msgid "Effect B - Animated"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:204
+msgid "Custom Pattern - Static"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:205
+msgid "Custom Pattern - Animated"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:206
+msgid "Fullscreen Overlay"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:207
+msgid "Fit Text"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:208
+msgid "Custom Pattern - Circle"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:219
+msgid "Custom Pattern"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:229
+msgid "Header Effect Selector"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:240
+msgid "List Style"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:250
+msgid "Grid"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:251
+msgid "Masonry"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:262
+msgid "Gutter"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:273
+msgid "Advanced"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:281
+msgid "Custom Class(es)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:292
+msgid "Custom CSS"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:305
+msgid "Enter anchor ID (without #)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:309
+msgid ""
+"Anchor ID for links (<span "
+"class=\"text-transform-none\">http://domain.com/some-page#<span "
+"class=\"highlight-text\">some-anchor-id</span>)</span>"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:328
+msgid "Section <span>Title</span>"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:337
+msgid "<span>Header</span> Details"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:346
+msgid "Lead Content"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:352
+msgid "Column"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:353
+msgid "Add Column"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:370
+msgid "Column Width"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:380 widgets/skrollex-section-base.php:381
+#: widgets/skrollex-section-base.php:382 widgets/skrollex-section-base.php:383
+msgid "1 of 5 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:384
+msgid "1 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:385
+msgid "2 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:386
+msgid "3 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:387
+msgid "4 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:388
+msgid "5 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:389
+msgid "6 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:390
+msgid "7 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:391
+msgid "8 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:392
+msgid "9 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:393
+msgid "10 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:394
+msgid "11 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:395
+msgid "12 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:396
+msgid "13 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:397
+msgid "14 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:398
+msgid "15 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:399
+msgid "16 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:400
+msgid "17 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:401
+msgid "18 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:402
+msgid "19 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:403
+msgid "20 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:404
+msgid "21 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:405
+msgid "22 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:406
+msgid "23 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:407
+msgid "24 of 24 columns"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:427
+msgid "Column Style"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:429
+msgid "Simple"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:430
+msgid "Decorated"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:441
+msgid "Column Height"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:443
+msgid "Auto"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:444
+msgid "100px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:445
+msgid "200px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:446
+msgid "300px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:447
+msgid "400px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:448
+msgid "500px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:449
+msgid "600px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:450
+msgid "700px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:451
+msgid "800px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:452
+msgid "900px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:453
+msgid "1000px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:464
+msgid "Column Animation"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:467 widgets/skrollex-section-base.php:603
+msgid "Left"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:468 widgets/skrollex-section-base.php:603
+msgid "Right"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:469
+msgid "Up"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:470
+msgid "Down"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:481
+msgid "Filters (Only for masonry, comma separated)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:482
+msgid "Example: Web Sites, Art"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:493
+msgid "Column Icon"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:501
+msgid "Column Icon Class"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:502
+msgid "Examples: 'fa fa-car', 'li_tv'"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:512
+msgid "Column Icon Layout"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:514
+msgid "Small"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:515
+msgid "Big Circle"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:516
+msgid "Big Circle Hard"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:529 widgets/skrollex-section-base.php:537
+msgid "Column Image"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:547
+msgid "Layout"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:549
+msgid "New Window (like gallery item)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:550
+msgid "Hover (like team member)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:551
+msgid "Parallax Background"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:552
+msgid "Image On Top"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:563
+msgid "Hover Colors"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:577
+msgid "Column <span>Title</span>"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:586
+msgid "Column <span>Details</span>"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:595
+msgid "Column Content"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:603
+msgid "Width"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:607
+msgid "Media Block Location"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:615
+msgid "If empty then auto"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:619
+msgid "Image/Slider Height, px"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:625
+msgid "Media Block Image"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:626
+msgid "Add Image (If multiple then slider)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:644 widgets/skrollex-section-base.php:683
+msgid "Image"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:657
+msgid "Media Block Content (useful for video or text)"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:664
+msgid "Background"
+msgstr ""
+
+#: widgets/skrollex-section-base.php:665
+msgid "Add Background (if multiple then animated)"
+msgstr ""
+
+#: widgets/skrollex-section-widget.php:13
+msgid "SX Section"
+msgstr ""
+
+#: widgets/skrollex-section-widget.php:15
+msgid "This widget is used to display your content."
+msgstr ""
+
+#: widgets/skrollex-section-widget.php:65
+msgid "All"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:12
+msgid "SX Background Video"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:14
+msgid "This widget is used to display background video."
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:27
+msgid "YouTube"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:28
+msgid "Vimeo"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:29
+msgid "Video File"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:33
+msgid "Type"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:41
+msgid "See examples below"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:44
+msgid "ID (for YouTube and Vimeo) or URL (for file)"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:54
+msgid "Volume (%)"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:68
+msgid "Alternative image"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:77
+msgid "Set ID for YouTube and Vimeo or URL for video file."
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:79
+#: widgets/skrollex-video-bg-widget.php:81
+msgid "ID:"
+msgstr ""
+
+#: widgets/skrollex-video-bg-widget.php:83
+msgid "URL:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Skrollex"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://skrollex-wp.x40.ru/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "One Page Parallax Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "x40"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.x40.ru/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blank Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left &amp; Right Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Right Sidebar"
+msgstr ""
